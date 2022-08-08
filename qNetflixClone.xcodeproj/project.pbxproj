@@ -16,6 +16,7 @@
 		82805A8B28A1C45A00DFA27B /* UpcomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82805A8A28A1C45A00DFA27B /* UpcomingViewController.swift */; };
 		82805A8D28A1C46A00DFA27B /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82805A8C28A1C46A00DFA27B /* SearchViewController.swift */; };
 		82805A9028A1C47C00DFA27B /* DownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82805A8F28A1C47C00DFA27B /* DownloadViewController.swift */; };
+		82805A9228A1CBFA00DFA27B /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82805A9128A1CBFA00DFA27B /* CollectionViewTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		82805A8A28A1C45A00DFA27B /* UpcomingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingViewController.swift; sourceTree = "<group>"; };
 		82805A8C28A1C46A00DFA27B /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		82805A8F28A1C47C00DFA27B /* DownloadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadViewController.swift; sourceTree = "<group>"; };
+		82805A9128A1CBFA00DFA27B /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 		82805A8528A1BD8200DFA27B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				82805A9128A1CBFA00DFA27B /* CollectionViewTableViewCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 			files = (
 				82805A8D28A1C46A00DFA27B /* SearchViewController.swift in Sources */,
 				82805A7628A1BAB400DFA27B /* MainTabBarViewController.swift in Sources */,
+				82805A9228A1CBFA00DFA27B /* CollectionViewTableViewCell.swift in Sources */,
 				82805A7228A1BAB400DFA27B /* AppDelegate.swift in Sources */,
 				82805A9028A1C47C00DFA27B /* DownloadViewController.swift in Sources */,
 				82805A7428A1BAB400DFA27B /* SceneDelegate.swift in Sources */,
