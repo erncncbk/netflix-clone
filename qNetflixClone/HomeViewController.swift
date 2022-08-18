@@ -8,6 +8,7 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    
     let sectionTitles: [String] = ["Trending Movie","Popular","Trending TV","Upcoming Movies","Top Rated"]
 
     private let homeFeedTable: UITableView = {
@@ -29,6 +30,8 @@ class HomeViewController: UIViewController {
         
         homeFeedTable.tableHeaderView = HeroHeaderUIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 400))
         
+        getTrendingMovies()
+        
     }
     private func configureNavBar() {
         var image = UIImage(named: "netflix")
@@ -47,6 +50,12 @@ class HomeViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         homeFeedTable.frame = view.bounds
+    }
+    
+    private func getTrendingMovies(){
+        APICaller.shared.getTrendingMovies { _ in
+            
+        }
     }
 
 }
