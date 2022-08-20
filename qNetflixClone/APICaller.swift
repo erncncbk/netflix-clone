@@ -62,7 +62,6 @@ class APICaller{
             do{
                 let results = try JSONDecoder().decode(MovieResponse.self, from: data)
                 completion(.success(results.results))
-                print(results)
             }catch{
                 completion(.failure(APIError.failedToGetData))
             }
@@ -78,7 +77,6 @@ class APICaller{
             do{
                 let results = try JSONDecoder().decode(MovieResponse.self, from: data)
                 completion(.success(results.results))
-                print(results)
             }catch{
                 completion(.failure(APIError.failedToGetData))
             }
@@ -94,7 +92,6 @@ class APICaller{
             do{
                 let results = try JSONDecoder().decode(MovieResponse.self, from: data)
                 completion(.success(results.results))
-                print(results)
             }catch{
                 completion(.failure(APIError.failedToGetData))
             }
