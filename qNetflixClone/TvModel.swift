@@ -1,17 +1,17 @@
 //
-//  MovieModel.swift
+//  TvModel.swift
 //  qNetflixClone
 //
-//  Created by Erencan on 18.08.2022.
+//  Created by Erencan Cabuk on 20/08/2022.
 //
 
 import Foundation
 
-struct MovieResponse: Codable {
-    let results : [Movie]
+struct TrendingTvResponse: Codable {
+    let results : [Tv]
 }
 
-struct Movie: Codable {
+struct Tv: Codable {
     let id: Int
     let media_type: String?
     let original_name: String?

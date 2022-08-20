@@ -18,6 +18,9 @@
 		82805A9028A1C47C00DFA27B /* DownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82805A8F28A1C47C00DFA27B /* DownloadViewController.swift */; };
 		82805A9228A1CBFA00DFA27B /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82805A9128A1CBFA00DFA27B /* CollectionViewTableViewCell.swift */; };
 		82805A9428A1D2B300DFA27B /* HeroHeaderUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82805A9328A1D2B300DFA27B /* HeroHeaderUIView.swift */; };
+		D7CED03728B1303B00BAB9AB /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CED03628B1303B00BAB9AB /* APICaller.swift */; };
+		D7CED03A28B1305C00BAB9AB /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CED03928B1305C00BAB9AB /* StringExtensions.swift */; };
+		D7CED03D28B1308100BAB9AB /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CED03C28B1308100BAB9AB /* MovieModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		82805A8F28A1C47C00DFA27B /* DownloadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadViewController.swift; sourceTree = "<group>"; };
 		82805A9128A1CBFA00DFA27B /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
 		82805A9328A1D2B300DFA27B /* HeroHeaderUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroHeaderUIView.swift; sourceTree = "<group>"; };
+		D7CED03628B1303B00BAB9AB /* APICaller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		D7CED03928B1305C00BAB9AB /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		D7CED03C28B1308100BAB9AB /* MovieModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,9 @@
 		82805A7028A1BAB400DFA27B /* qNetflixClone */ = {
 			isa = PBXGroup;
 			children = (
+				D7CED03B28B1306F00BAB9AB /* Models */,
+				D7CED03828B1304C00BAB9AB /* Resources */,
+				D7CED03528B1301B00BAB9AB /* Managers */,
 				82805A8528A1BD8200DFA27B /* Views */,
 				82805A8628A1BD9000DFA27B /* ModelViews */,
 				82805A8728A1BD9700DFA27B /* Controller */,
@@ -104,6 +113,30 @@
 				82805A8F28A1C47C00DFA27B /* DownloadViewController.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		D7CED03528B1301B00BAB9AB /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				D7CED03628B1303B00BAB9AB /* APICaller.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		D7CED03828B1304C00BAB9AB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D7CED03928B1305C00BAB9AB /* StringExtensions.swift */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D7CED03B28B1306F00BAB9AB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D7CED03C28B1308100BAB9AB /* MovieModel.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,11 +209,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7CED03D28B1308100BAB9AB /* MovieModel.swift in Sources */,
 				82805A8D28A1C46A00DFA27B /* SearchViewController.swift in Sources */,
 				82805A7628A1BAB400DFA27B /* MainTabBarViewController.swift in Sources */,
 				82805A9228A1CBFA00DFA27B /* CollectionViewTableViewCell.swift in Sources */,
+				D7CED03728B1303B00BAB9AB /* APICaller.swift in Sources */,
 				82805A9428A1D2B300DFA27B /* HeroHeaderUIView.swift in Sources */,
 				82805A7228A1BAB400DFA27B /* AppDelegate.swift in Sources */,
+				D7CED03A28B1305C00BAB9AB /* StringExtensions.swift in Sources */,
 				82805A9028A1C47C00DFA27B /* DownloadViewController.swift in Sources */,
 				82805A7428A1BAB400DFA27B /* SceneDelegate.swift in Sources */,
 				82805A8B28A1C45A00DFA27B /* UpcomingViewController.swift in Sources */,
@@ -325,7 +361,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = H4MF7S337P;
+				DEVELOPMENT_TEAM = 3U626T494V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = qNetflixClone/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -352,7 +388,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = H4MF7S337P;
+				DEVELOPMENT_TEAM = 3U626T494V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = qNetflixClone/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
